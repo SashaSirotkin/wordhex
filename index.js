@@ -1,10 +1,13 @@
 var seed = require('seedrandom');
 
+// To protect against unlikely out of scope hex values (i.e. 16).
+var SMALL_FLOAT = 0.00000000000000001;
+
 /*
  * Returns a hex value for a given randon number (e.g. 0.32746743882549856).
  */
 function toHex(randNum) {
-  return (Math.round(randNum * 16)).toString(16);
+  return (Math.floor((randNum - SMALL_FLOAT) * 16)).toString(16);
 }
 
 /*

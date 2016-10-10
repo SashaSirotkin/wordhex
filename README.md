@@ -1,16 +1,19 @@
 # wordhex
-ES5 function to convert a string into a hex color code. The motivation for this library is to generate unique and repeatable hex color codes for a person's name.
+ES5 function to convert a string into a hex color code. The motivation behind this library is to be able to generate unique and repeatable hex color codes for people's names.
 
 ## Usage
 ```js
 var wordhex = require('wordhex');
 
-// Returns '#2daeeb'
-var hexcode = wordhex('npm');
+// Returns '#1daeea'
+wordhex('npm');
 
 // Returns '#FFFFFF'
-var hexcode = wordhex('');
+wordhex('');
 
-// Still returns '#2daeeb'
-var hexcode = wordhex('npm');
+// Returns '#78835e'
+wordhex('github')
+
+// Still returns '#1daeea'
+wordhex('npm');
 ```
