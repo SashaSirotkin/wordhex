@@ -1,0 +1,36 @@
+{
+  "name": "wordhex",
+  "version": "0.0.1",
+  "description": "Javascript function to convert a string into a hex color code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SashaSirotkin/wordhex.git"
+  },
+  "devDependencies": {
+    "eslint": "3.6.0",
+    "eslint-config-airbnb": "12.0.0",
+    "eslint-plugin-import": "1.16.0",
+    "eslint-plugin-jsx-a11y": "2.2.2",
+    "eslint-plugin-react": "6.3.0",
+    "jest": "^16.0.1"
+  },
+  "keywords": [
+    "color",
+    "string",
+    "hex",
+    "hexcode"
+  ],
+  "author": "Sasha Sirotkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SashaSirotkin/wordhex/issues"
+  },
+  "homepage": "https://github.com/SashaSirotkin/wordhex#readme",
+  "dependencies": {
+    "seedrandom": "^2.4.2"
+  }
+}
